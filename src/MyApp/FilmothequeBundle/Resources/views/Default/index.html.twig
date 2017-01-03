@@ -1,0 +1,15 @@
+{% extends ":default:index.html.twig" %}
+{% block title %}Accueil{% endblock title%}
+
+{% block body %}
+    {% block nav %}
+        <ul>
+            <li><a href="{{  path('myapp_category_lister') }}">Categories</a></li>
+            <li><a href="{{  path('myapp_acteur_lister') }}">Acteur</a></li>
+            <li><a href="{{  path('myapp_film_lister') }}">Film</a></li>
+        </ul>
+    {% endblock nav %}
+    {% block contenu  %}
+        <h1>Accueil</h1>
+    {% endblock contenu %}
+{% endblock body %}

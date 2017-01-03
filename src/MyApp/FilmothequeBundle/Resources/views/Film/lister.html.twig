@@ -1,0 +1,10 @@
+{% extends "MyAppFilmothequeBundle:default:index.html.twig" %}
+{% block title %}Liste des films{% endblock %}
+{% block contenu %}
+    <h1>Liste des films</h1>
+    {% for film in films %}
+        <p>{{ film.titre }}</p>
+    {% else %}
+        <p>Aucune catégorie n'a été trouvée.</p>
+    {% endfor %}
+{% endblock %}
